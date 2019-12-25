@@ -2,7 +2,8 @@ import * as React from 'react';
 import { Component } from 'react';
 import { View, Dimensions, Text } from 'react-native';
 import data from '../data/dataLine';
-import { LineChart } from 'react-native-line-chart';
+import {LineChart} from "react-native-chart-kit";
+
 
 export default class FPT extends Component{
     render() {

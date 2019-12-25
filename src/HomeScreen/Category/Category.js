@@ -4,13 +4,14 @@ import { Image,View,Text } from 'react-native';
 import styles from '../../style/style_mobile';
 
 export default class CategoryScreen extends Component {
-    static navigationOpention = {
-        tabBarLabel: 'Tab1'
-    }
+
     render(){
         return(
             <View style={styles.bg_primary}>
-                <Text>tab</Text>
+             <View style={styles.header_mobile}>
+                    <Text style={styles.title_ticket}>Danh mục</Text>
+                    
+                </View>
             </View>
         )
     }
