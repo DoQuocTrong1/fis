@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
         height: 50,
         textAlign: 'center',
         alignItems: 'center',
-        marginBottom: 40,
+        marginBottom: 30,
         marginTop: 10,
         flexDirection: 'row',
         justifyContent: 'center'
@@ -36,7 +36,6 @@ const styles = StyleSheet.create({
         padding: 10,
         flexDirection: 'row',
         flex: 1,
-        marginBottom: -430
     },
     row: {
         marginRight: - 10,
@@ -68,7 +67,7 @@ const styles = StyleSheet.create({
     box_home: {
         backgroundColor: '#2d3035',
         marginBottom: 10,
-        flex: 1
+
     },
     title_box: {
         fontSize: 18,
@@ -259,36 +258,120 @@ const styles = StyleSheet.create({
     txt_btn_group: {
         color: '#F17128',
         textAlign: 'center',
-        paddingLeft:5
+        paddingLeft: 5
     },
-    row_addTicket:{
-        flex:1,
-        flexDirection:'row',
+    row_addTicket: {
+        flex: 1,
+        flexDirection: 'row',
     },
-    btn_save_Ticket:{
-        flex:1,
-        width:'50%',
+    btn_registration: {
         backgroundColor: '#F17128',
         alignItems: 'center',
         borderColor: '#F17128',
-        height:50,
-        margin:5,
-        paddingTop:15,
-        borderRadius:10
+        width: '95%',
+        height: 60,
+        paddingTop: 15,
+        margin: 10,
+        borderRadius: 5,
     },
-    btn_reset_Ticket:{
-        flex:1,
-        width:'50%',
+    btn_save_Ticket: {
+        flex: 1,
+        width: '50%',
+        backgroundColor: '#F17128',
+        alignItems: 'center',
+        borderColor: '#F17128',
+        height: 50,
+        margin: 5,
+        paddingTop: 15,
+        borderRadius: 5
+    },
+    btn_reset_Ticket: {
+        flex: 1,
+        width: '50%',
         backgroundColor: '#2d3035',
         alignItems: 'center',
         borderColor: '#fff',
-        height:50,
-        margin:5,
-        paddingTop:15,
-        borderRadius:10,
-        borderWidth:1
+        height: 50,
+        margin: 5,
+        paddingTop: 15,
+        borderRadius: 5,
+        borderWidth: 1
     },
     //End Add Ticket
+
+    //Notification 
+    notification_content: {
+        flex: 1,
+        justifyContent: 'flex-start',
+        margin: 10,
+        borderBottomWidth: 1,
+        borderColor: '#878787',
+    },
+    notification_heading: {
+        color: '#fff',
+        fontSize: 16,
+        margin: 10,
+    },
+    notification_text: {
+        color: '#fff',
+        fontSize: 14,
+        marginLeft: 10,
+        marginBottom: 10
+    },
+    box_noti: {
+        width: deviceWidth
+    },
+    //End Notification
+
+    //Category
+
+    box_menu: {
+        width: deviceWidth,
+    },
+
+    //End Category
+
+    //User
+    btn_user: {
+        height: 60,
+        borderColor: '#22252A',
+        borderBottomWidth: 1.5,
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        paddingRight: 10,
+    },
+    txt_btn_user: {
+        color: '#fff',
+        marginLeft: 10,
+        fontSize: 18
+    },
+    btn_edit: {
+        color: '#F17128',
+        fontSize: 16,
+    },
+    box_detail_info:{
+        flexDirection:'row',
+        justifyContent:'space-between',
+        width:deviceWidth,
+        height: 70,
+        borderColor: '#22252A',
+        borderBottomWidth: 1.5,
+        alignItems: 'center',
+        padding:10
+    },
+    txt_left_label:{
+        fontSize:16,
+        color:'#878787',
+    },
+    txt_right_info:{
+        color: '#fff',
+        fontSize:18,
+    
+    },
+
+    //End User
+
 
 });
 export default styles;

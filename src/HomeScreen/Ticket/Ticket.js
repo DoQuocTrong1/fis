@@ -25,7 +25,7 @@ class TicketScreen extends Component {
                         backgroundColor='#22252A'
                         size={30}
                         style={styles.btn_add}
-                        onPress={() => navigate('Profile', { name: 'Jane' })}
+                        onPress={() => navigate('Profile')}
                     />
                 </View>
 

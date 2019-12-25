@@ -9,6 +9,7 @@ import DashBroadScreen from './DashBroad/DashBroad';
 import CategoryScreen from './Category/Category';
 import UserScreen from './User/User';
 import TicketScreen from './Ticket/Ticket';
+import NotificationScreen from './Notification/Notification';
 
 const TabNavigator = createMaterialBottomTabNavigator(
   {
@@ -33,6 +34,20 @@ const TabNavigator = createMaterialBottomTabNavigator(
         tabBarIcon: ({ tintColor }) => (
           <View>
             <Icon style={[{ color: tintColor }]} size={25} name={'checkbox-multiple-blank-outline'} />
+          </View>),
+        activeColor: '#F17128',
+        inactiveColor: '#fff',
+        barStyle: { backgroundColor: '#22252A', height:70 },
+        
+      }
+    },
+    Notification: {
+      screen: NotificationScreen,
+      navigationOptions: {
+        tabBarLabel: 'Thông báo',
+        tabBarIcon: ({ tintColor }) => (
+          <View>
+            <Icon style={[{ color: tintColor }]} size={25} name={'bell-outline'} />
           </View>),
         activeColor: '#F17128',
         inactiveColor: '#fff',

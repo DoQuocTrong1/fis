@@ -10,5 +10,4 @@ import AddTicket from './src/HomeScreen/Ticket/AddTicket/AddTicket';
 import Login from './src/Login/Login';
 import ForPass from './src/ForgotPass/ForgotPass';
 
-
 AppRegistry.registerComponent(appName, () => HomeScreen);

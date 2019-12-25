@@ -195,7 +195,7 @@ export default class Configuration extends Component {
                             </View>
 
                             <View style={styles.form_add}>
-                                <TouchableOpacity style={styles.btn_login}>
+                                <TouchableOpacity style={styles.btn_registration}>
                                     <Text style={styles.txt_btnLogin}>ĐĂNG KÝ</Text>
                                 </TouchableOpacity>
 
