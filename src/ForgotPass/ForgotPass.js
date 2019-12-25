@@ -11,14 +11,11 @@ export default class ForgotPass extends Component {
                     <Image source={require('../../logo/logo.png')} style={styles.logo}></Image>
                     <Text style={styles.txt_logo}>Quên mật khẩu</Text>
                 </View>
-                <View style={styles.alert_success}>
-                    <Text style={styles.txt_alert}> Gửi mật khẩu thành công</Text>
-                </View>
                 <View>
-                    <View style={styles.searchSection}>
+                    <View style={styles.form_group}>
                         <Icon style={styles.searchIcon} name="mail" size={25} color="#fff" />
                         <TextInput
-                            style={styles.input}
+                            style={styles.form_control}
                             placeholder="Nhập tên tài khoản đăng nhập"
                             underlineColorAndroid="transparent"
                             placeholderTextColor={'#fff'}

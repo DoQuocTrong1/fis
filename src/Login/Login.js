@@ -11,9 +11,7 @@ export default class Login extends Component {
                     <Image source={require('../../logo/logo.png')} style={styles.logo}></Image>
                     <Text style={styles.txt_logo}>FPT.HyperSM Platform Login</Text>
                 </View>
-                <View style={styles.alert_success}>
-                    <Text style={styles.txt_alert}> Tên đăng nhập hoặc mật khẩu không đúng!</Text>
-                </View>
+                
                 <View>
                     <View style={styles.form_group}>
                         <Icon style={styles.searchIcon} name="user" size={25} color="#fff" />

@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#22252A',
         color: '#fff',
         flex: 1,
-        alignItems:'center', 
+        alignItems: 'center',
     },
 
     // DashBroad Style
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         padding: 15,
         marginBottom: 20,
         borderRadius: 4,
-        flex:1
+        flex: 1
     },
     txt_noti: {
         textAlign: 'center',
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontFamily: 'blod'
     },
-    box_item:{
+    box_item: {
         backgroundColor: '#2d3035',
         padding: 15,
         marginBottom: 20,
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         margin: 5,
         borderRadius: 10,
-        marginBottom:20,
+        marginBottom: 20,
     },
     searchIcon: {
         padding: 10,
@@ -223,7 +223,7 @@ const styles = StyleSheet.create({
     },
     box_add_new_content: {
         flex: 1,
-        flexDirection:'column',
+        flexDirection: 'column',
     },
     txt_box_add_new: {
         fontSize: 18,
@@ -234,20 +234,60 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: 20
     },
-    form_add:{
-        padding:10,
-        flexDirection:'column'
+    form_add: {
+        padding: 10,
+        flexDirection: 'column'
     },
-    group_inline:{
-        display:'flex',
-        justifyContent:'space-between'
+    group_inline: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        marginBottom: 10,
+        alignItems: 'center',
     },
-    txt_group_inline:{
-        color:'#fff',
-        fontSize:18,
-        
-    },
+    txt_group_inline: {
+        color: '#fff',
+        fontSize: 16,
+        flex: 1
 
+    },
+    btn_group_inline: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'flex-end'
+    },
+    txt_btn_group: {
+        color: '#F17128',
+        textAlign: 'center',
+        paddingLeft:5
+    },
+    row_addTicket:{
+        flex:1,
+        flexDirection:'row',
+    },
+    btn_save_Ticket:{
+        flex:1,
+        width:'50%',
+        backgroundColor: '#F17128',
+        alignItems: 'center',
+        borderColor: '#F17128',
+        height:50,
+        margin:5,
+        paddingTop:15,
+        borderRadius:10
+    },
+    btn_reset_Ticket:{
+        flex:1,
+        width:'50%',
+        backgroundColor: '#2d3035',
+        alignItems: 'center',
+        borderColor: '#fff',
+        height:50,
+        margin:5,
+        paddingTop:15,
+        borderRadius:10,
+        borderWidth:1
+    },
     //End Add Ticket
 
 });

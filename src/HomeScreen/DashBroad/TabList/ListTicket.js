@@ -37,7 +37,7 @@ export default class ExampleThree extends Component {
                           key={index}
                           data={rowData}
                           widthArr={state.widthArr}
-                          style={[styles.row, index%2 && {backgroundColor: '#F7F6E7'}]}
+                          style={[styles.row, index%2 && {backgroundColor: '#1e2124'}]}
                           textStyle={styles.text}
                         />
                       ))
@@ -52,9 +52,9 @@ export default class ExampleThree extends Component {
     }
      
     const styles = StyleSheet.create({
-      container: { flex: 1, padding: 16, paddingTop: 30, backgroundColor: '#fff' },
-      header: { height: 50, backgroundColor: '#537791' },
-      text: { textAlign: 'center', fontWeight: '100' },
+      container: { flex: 1,  paddingTop: 30, backgroundColor: '#2d3035' },
+      header: { height: 50, backgroundColor: '#22252A' },
+      text: { textAlign: 'center', fontWeight: '100', color:'#fff' },
       dataWrapper: { marginTop: -1 },
-      row: { height: 40, backgroundColor: '#E7E6E1' }
+      row: { height: 40, backgroundColor: '#41484f' }
     });
