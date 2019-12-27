@@ -1,4 +1,5 @@
-import { Dimensions, StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet, Platform } from 'react-native';
+import { ifIphoneX } from 'react-native-iphone-x-helper';
 
 const deviceWidth = Dimensions.get('window').width;
 const styles = StyleSheet.create({
@@ -12,13 +13,20 @@ const styles = StyleSheet.create({
     // DashBroad Style
     header_mobile: {
         position: 'relative',
-        height: 50,
+        height: 40,
         textAlign: 'center',
         alignItems: 'center',
         marginBottom: 30,
-        marginTop: 10,
+        // marginTop: 10,
         flexDirection: 'row',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        // marginTop: Platform.OS === 'ios' ? 20 :10,
+        ...ifIphoneX({
+            marginTop:25,
+        },{
+            marginTop:10,
+        }
+        )
     },
     logo_title: {
         width: 80,

@@ -32,7 +32,6 @@ class DetailUser extends Component {
                 <View style={styles.content_body}>
                     <View style={styles.box_home}>
                         <View style={styles.box_detail_info}>
-
                             <Text style={styles.txt_left_label}>Họ &amp; tên</Text>
                             <Text style={styles.txt_right_info}>Nguyễn Mạnh Cường</Text>
                         </View>
