@@ -17,6 +17,15 @@ export default class Configuration extends Component {
     toggleSwitch = (value) => {
         this.setState({ switchValue: value })
     }
+    constructor() {
+        super();
+        this.state = { checked: false };
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(checked) {
+        this.setState({ checked });
+    }
     render() {
         return (
             <View style={styles.box_noti_ticket}>
@@ -27,7 +36,6 @@ export default class Configuration extends Component {
                                 Host basic infomation
                             </Text>
                             <View style={styles.form_add}>
-
                                 <View style={styles.form_group}>
                                     <TextInput style={styles.form_control}
                                         placeholder="Tên * "
@@ -99,7 +107,7 @@ export default class Configuration extends Component {
                                         active={false}
                                         disabled={false}
                                         width={25}
-                                        radius={25}
+                                        radius={15}
                                         onValueChange={(val) => {
                                             /* your handler function... */
                                         }} />
@@ -171,7 +179,7 @@ export default class Configuration extends Component {
                                         active={false}
                                         disabled={false}
                                         width={25}
-                                        radius={25}
+                                        radius={15}
                                         onValueChange={(val) => {
                                             /* your handler function... */
                                         }} />
@@ -187,7 +195,7 @@ export default class Configuration extends Component {
                                         active={false}
                                         disabled={false}
                                         width={25}
-                                        radius={25}
+                                        radius={15}
                                         onValueChange={(val) => {
                                             /* your handler function... */
                                         }} />

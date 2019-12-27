@@ -91,9 +91,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     logo: {
-        width: 200,
-        height: 105,
-        marginBottom: 10
+        width: 300,
+        height: 169,
+        marginBottom: 20
     },
     txt_logo: {
         fontSize: 20,
@@ -367,7 +367,12 @@ const styles = StyleSheet.create({
     txt_right_info:{
         color: '#fff',
         fontSize:18,
-    
+    },
+    right_info:{
+        color: '#fff',
+        width: '30%',
+        marginRight:-60,
+        
     },
 
     //End User

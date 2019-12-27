@@ -27,9 +27,9 @@ const renderTabBar = props => (
 
   const renderScene = SceneMap({
     first: Configuration,
-    second: Notification,
-    three:DataProcessing,
-    four:Relationship,
+    second: Configuration,
+    three:Configuration,
+    four:Configuration,
   });
 
   return (

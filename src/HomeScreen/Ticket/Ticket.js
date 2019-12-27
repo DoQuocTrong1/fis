@@ -38,7 +38,7 @@ class TicketScreen extends Component {
                                 underlineColorAndroid="transparent"
                                 placeholderTextColor={'#fff'}
                             />
-                            <Icon.Button style={styles.searchIcon} name="ios-search" size={25} color="#fff" backgroundColor='none' />
+                            <Icon.Button style={styles.searchIcon} name="ios-search" size={25} color="#fff" backgroundColor='#22252A' />
                         </View>
                         <View style={styles.box_list_content}>
                             <ListTicket />

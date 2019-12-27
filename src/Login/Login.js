@@ -8,8 +8,7 @@ export default class Login extends Component {
         return (
             <View style={styles.bg_primary}>
                 <View style={styles.login_logo}>
-                    <Image source={require('../../logo/logo.png')} style={styles.logo}></Image>
-                    <Text style={styles.txt_logo}>FPT.HyperSM Platform Login</Text>
+                    <Image source={require('../../logo/logo.png')} style={styles.logo}></Image>                  
                 </View>
                 
                 <View>

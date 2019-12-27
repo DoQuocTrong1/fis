@@ -9,7 +9,6 @@ export default class ForgotPass extends Component {
             <View style={styles.bg_primary}>
                 <View style={styles.login_logo}>
                     <Image source={require('../../logo/logo.png')} style={styles.logo}></Image>
-                    <Text style={styles.txt_logo}>Quên mật khẩu</Text>
                 </View>
                 <View>
                     <View style={styles.form_group}>

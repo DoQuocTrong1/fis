@@ -20,35 +20,33 @@ export default class DashBroadScreen extends Component {
                 </View>
 
                 <View style={styles.content_body}>
-                <ScrollView style={{ flex: 1 }}>
-                    <View style={styles.box_noti_dashboard}>
-                        <View style={styles.col_xs_4}>
-                            <View style={styles.box_item}>
-                                <View style={styles.icon_noti}>
-                                    <Icon name={'link'} size={40} color={'#F17128'}></Icon>
-                                    <Text style={styles.txt_noti}>25</Text>
+                    <ScrollView style={{ flex: 1 }}>
+                        <View style={styles.box_noti_dashboard}>
+                            <View style={styles.col_xs_4}>
+                                <View style={styles.box_item}>
+                                    <View style={styles.icon_noti}>
+                                        <Icon name={'link'} size={40} color={'#F17128'}></Icon>
+                                        <Text style={styles.txt_noti}>25</Text>
+                                    </View>
+                                </View>
+                            </View>
+                            <View style={styles.col_xs_4}>
+                                <View style={styles.box_item}>
+                                    <View style={styles.icon_noti}>
+                                        <Icon name={'box'} size={40} color={'#F17128'}></Icon>
+                                        <Text style={styles.txt_noti}>25</Text>
+                                    </View>
+                                </View>
+                            </View>
+                            <View style={styles.col_xs_4}>
+                                <View style={styles.box_item}>
+                                    <View style={styles.icon_noti}>
+                                        <Icon name={'images'} size={40} color={'#F17128'}></Icon>
+                                        <Text style={styles.txt_noti}>25</Text>
+                                    </View>
                                 </View>
                             </View>
                         </View>
-                        <View style={styles.col_xs_4}>
-                            <View style={styles.box_item}>
-                                <View style={styles.icon_noti}>
-                                    <Icon name={'box'} size={40} color={'#F17128'}></Icon>
-                                    <Text style={styles.txt_noti}>25</Text>
-                                </View>
-                            </View>
-                        </View>
-                        <View style={styles.col_xs_4}>
-                            <View style={styles.box_item}>
-                                <View style={styles.icon_noti}>
-                                    <Icon name={'images'} size={40} color={'#F17128'}></Icon>
-                                    <Text style={styles.txt_noti}>25</Text>
-                                </View>
-                            </View>
-                        </View>
-                    </View>
-
-                   
                         <View style={styles.box_home}>
                             <View style={styles.box_content}>
                                 <TabBarChar />

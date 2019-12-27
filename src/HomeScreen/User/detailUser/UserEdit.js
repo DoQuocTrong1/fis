@@ -37,8 +37,9 @@ class UserEdit extends Component {
                         </View>
                         <View style={styles.box_detail_info}>
                             <Text style={styles.txt_left_label}>Giới tính</Text>
-                            <Picker style={styles.txt_right_info}
+                            <Picker style={styles.right_info}
                                 selectedValue={this.state.language}
+                                itemPosition='right_info'
                                 onValueChange={(itemValue, itemPosition) =>
                                     this.setState({ language: itemValue, choosenIndex: itemPosition })}>
                                 <Picker.Item label="Nam " value="Men" />
@@ -60,7 +61,7 @@ class UserEdit extends Component {
                                 active={false}
                                 disabled={false}
                                 width={25}
-                                radius={25}
+                                radius={15}
                                 onValueChange={(val) => {
                                     /* your handler function... */
                                 }} />
