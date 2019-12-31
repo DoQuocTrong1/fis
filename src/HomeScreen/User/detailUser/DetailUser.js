@@ -2,8 +2,6 @@ import * as React from 'react';
 import { Component } from 'react';
 import { Image, View, Text, TouchableOpacity, TextInput } from 'react-native';
 import styles from '../../../style/style_mobile';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
 
 import UserEditScreen from './UserEdit';
 import { Icon } from 'react-native-vector-icons/FontAwesome';

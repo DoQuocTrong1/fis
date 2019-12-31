@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { Component } from 'react';
-import { Image, View, Text,TouchableOpacity } from 'react-native';
+import { Image, View, Text, TouchableOpacity } from 'react-native';
 import styles from '../../style/style_mobile';
 import Icon from 'react-native-vector-icons/Ionicons';
+
 
 export default class CategoryScreen extends Component {
 

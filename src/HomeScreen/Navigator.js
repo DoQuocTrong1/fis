@@ -7,7 +7,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import DashBroadScreen from './DashBroad/DashBroad';
 import CategoryScreen from './Category/Category';
-import UserScreen from './User/User';
+import UserScreen from './User/navigator';
 import TicketScreen from './Ticket/Ticket';
 import NotificationScreen from './Notification/Notification';
 

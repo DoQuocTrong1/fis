@@ -6,12 +6,8 @@ import { createStackNavigator } from 'react-navigation-stack';
 import styles from '../../style/style_mobile';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import DetailScreen from './detailUser/DetailUser';
 
-
-
-
-class UserScreen extends Component {
+export default class UserScreen extends Component {
     static navigationOptions = {
         header: null,
     };
@@ -53,29 +49,3 @@ class UserScreen extends Component {
 }
 
 
-const MainNavigator = createStackNavigator({
-    User: { screen: UserScreen },
-    Detail: { screen: DetailScreen },
-},
-    {
-        initialRouteName: 'User',
-        /* The header config from HomeScreen is now here */
-        defaultNavigationOptions: {
-            headerStyle: {
-                backgroundColor: '#22252A',
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-                fontWeight: 'bold',
-                textAlign: 'center',
-                fontSize: 22,
-                marginLeft: '20%'
-            },
-
-        },
-
-    });
-
-const User = createAppContainer(MainNavigator);
-
-export default User;
