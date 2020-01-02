@@ -22,6 +22,7 @@ const MainNavigator = createStackNavigator({
                 fontSize: 22,
                 marginLeft: '20%'
             },
+            header:null
 
         },
 

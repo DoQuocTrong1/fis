@@ -12,7 +12,6 @@ class AddTicket extends React.Component {
         return (
             <View style={{
                 backgroundColor: '#22252A',
-                color: '#fff',
                 flex: 1,
             }}>
                 <TabView />

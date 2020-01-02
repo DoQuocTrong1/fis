@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { View, StyleSheet, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import styles from '../style/style_mobile';
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import {Body} from 'native-base';
+
 
 export default class Login extends Component {
     render() {

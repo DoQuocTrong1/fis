@@ -17,14 +17,12 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         alignItems: 'center',
         marginBottom: 30,
-        // marginTop: 10,
         flexDirection: 'row',
         justifyContent: 'center',
-        // marginTop: Platform.OS === 'ios' ? 20 :10,
         ...ifIphoneX({
             marginTop:25,
         },{
-            marginTop:10,
+            marginTop:15,
         }
         )
     },
