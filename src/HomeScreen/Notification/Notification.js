@@ -30,6 +30,7 @@ export default class NotificationScreen extends Component {
                                     renderItem={({ item }) => <Item
                                         title={item.title}
                                         time={item.time} />}
+                                        initialNumToRender={20}
                                     keyExtractor={item => item.id}
                                 />
                             </View>

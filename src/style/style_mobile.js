@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         padding: 15,
         marginBottom: 20,
         borderRadius: 4,
-        flex: 1
+        // flex: 1
     },
     txt_noti: {
         textAlign: 'center',

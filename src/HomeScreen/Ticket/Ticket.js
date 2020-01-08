@@ -37,6 +37,7 @@ class TicketScreen extends Component {
                                 placeholder="Nhập từ khóa cần tìm kiếm"
                                 underlineColorAndroid="transparent"
                                 placeholderTextColor={'#fff'}
+
                             />
                             <Icon.Button style={styles.searchIcon} name="ios-search" size={25} color="#fff" backgroundColor='#22252A' />
                         </View>

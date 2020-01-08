@@ -29,7 +29,7 @@ export default class UserScreen extends Component {
                                     <Icon name="chevron-right" color='#fff' size={18} />
                                 </TouchableOpacity>
 
-                                <TouchableOpacity style={styles.btn_user}>
+                                <TouchableOpacity style={styles.btn_user} >
                                     <Text style={styles.txt_btn_user}>Đổi mật khẩu </Text>
                                     <Icon name="chevron-right" color='#fff' size={18} />
                                 </TouchableOpacity>
