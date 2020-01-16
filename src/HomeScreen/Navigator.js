@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 
-import {  createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
+import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import DashBroadScreen from './DashBroad/DashBroad';
@@ -10,6 +10,7 @@ import CategoryScreen from './Category/Category';
 import UserScreen from './User/navigator';
 import TicketScreen from './Ticket/Ticket';
 import NotificationScreen from './Notification/Notification';
+import IconBadge from 'react-native-icon-badge';
 
 const TabNavigator = createMaterialBottomTabNavigator(
   {
@@ -23,8 +24,8 @@ const TabNavigator = createMaterialBottomTabNavigator(
           </View>),
         activeColor: '#F17128',
         inactiveColor: '#fff',
-        barStyle: { backgroundColor: '#22252A', height:70 },
-        
+        barStyle: { backgroundColor: '#22252A', height: 100 },
+
       }
     },
     Ticket: {
@@ -37,8 +38,8 @@ const TabNavigator = createMaterialBottomTabNavigator(
           </View>),
         activeColor: '#F17128',
         inactiveColor: '#fff',
-        barStyle: { backgroundColor: '#22252A', height:70 },
-        
+        barStyle: { backgroundColor: '#22252A', height: 100 },
+
       }
     },
     Notification: {
@@ -46,13 +47,28 @@ const TabNavigator = createMaterialBottomTabNavigator(
       navigationOptions: {
         tabBarLabel: 'Thông báo',
         tabBarIcon: ({ tintColor }) => (
-          <View>
-            <Icon style={[{ color: tintColor }]} size={25} name={'bell-outline'} />
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', }}>
+            <IconBadge
+              MainElement={
+                <Icon style={[{ color: tintColor }]} size={30} name={'checkbox-multiple-blank-outline'} />
+              }
+              BadgeElement={
+                <Text style={{ color: '#FFFFFF' }}>{2}</Text>
+              }
+              IconBadgeStyle={
+                {
+                  width: 30,
+                  height: 30,
+                  backgroundColor: '#FF00EE'
+                }
+              }
+
+            />
           </View>),
         activeColor: '#F17128',
         inactiveColor: '#fff',
-        barStyle: { backgroundColor: '#22252A', height:70 },
-        
+        barStyle: { backgroundColor: '#22252A', height: 100 },
+
       }
     },
     category: {
@@ -61,11 +77,11 @@ const TabNavigator = createMaterialBottomTabNavigator(
         tabBarLabel: 'Danh mục',
         tabBarIcon: ({ tintColor }) => (
           <View>
-            <Icon style={[{ color: tintColor }]} size={25} name={'grid'} />
+            <Icon style={[{ color: tintColor }]} size={30} name={'grid'} />
           </View>),
         activeColor: '#F17128',
         inactiveColor: '#fff',
-        barStyle: { backgroundColor: '#22252A' , height:70},
+        barStyle: { backgroundColor: '#22252A', height: 100 },
       }
     },
     User: {
@@ -74,7 +90,7 @@ const TabNavigator = createMaterialBottomTabNavigator(
         tabBarLabel: 'Cá nhân',
         tabBarIcon: ({ tintColor }) => (
           <View>
-            <Icon style={[{ color: tintColor }]} size={25} name={'account-card-details-outline'} />
+            <Icon style={[{ color: tintColor }]} size={30} name={'account-card-details-outline'} />
           </View>),
       }
     },
@@ -83,8 +99,8 @@ const TabNavigator = createMaterialBottomTabNavigator(
     initialRouteName: "Home",
     activeColor: '#F17128',
     inactiveColor: '#fff',
-    barStyle: { backgroundColor: '#22252A', height:70,  },
-    
+    barStyle: { backgroundColor: '#22252A', height: 100, },
+
   },
 );
 

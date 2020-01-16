@@ -20,9 +20,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         ...ifIphoneX({
-            marginTop:25,
-        },{
-            marginTop:15,
+            marginTop: 25,
+        }, {
+            marginTop: 15,
         }
         )
     },
@@ -208,8 +208,69 @@ const styles = StyleSheet.create({
         flex: 1
     },
     box_list_content: { height: '100%' },
-
     //end Ticket Screen
+
+
+    //Ticket Details
+    table_panle: {
+        width: deviceWidth,
+    },
+    panel_default: {
+        borderColor: "#414141",
+        backgroundColor: '#2D3035',
+        margin: 10,
+        borderWidth: 1.5,
+
+    },
+    panel_heading: {
+        backgroundColor: '#414141',
+        borderColor: '#414141',
+    },
+    panel_title: {
+        color: '#fff',
+        fontWeight: 'bold',
+        fontSize: 20,
+        padding: 15
+    },
+    panel_body: {
+        padding: 10,
+        margin: 5,
+    },
+    panel_txtBody: {
+        color: '#a9aab2',
+        fontSize: 18,
+        fontWeight: '800',
+        marginLeft: 5
+    },
+    modalContent: {
+        backgroundColor: '#2D3035',
+    },
+    modalHeader: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: '#22252A',
+        padding: 20
+    },
+    modal_title: {
+        color: '#fff',
+        fontSize: 20,
+        fontWeight: 'bold',
+    },
+    modal_btnBody:{
+        flexDirection: 'row',
+        alignItems: 'center',
+        height:80,
+        borderBottomWidth: 1,
+        borderColor: '#878787',
+        marginLeft: 20, 
+        marginRight:20,
+        paddingBottom: -10
+    },
+    modalBody:{
+        marginBottom:10
+    },
+    //End Ticket Details
 
     //Add Ticket
     tab_content: {
@@ -356,29 +417,29 @@ const styles = StyleSheet.create({
         color: '#F17128',
         fontSize: 16,
     },
-    box_detail_info:{
-        flexDirection:'row',
-        justifyContent:'space-between',
-        width:deviceWidth,
+    box_detail_info: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: deviceWidth,
         height: 70,
         borderColor: '#878787',
         borderBottomWidth: 1.5,
         alignItems: 'center',
-        padding:10
+        padding: 10
     },
-    txt_left_label:{
-        fontSize:16,
-        color:'#878787',
+    txt_left_label: {
+        fontSize: 16,
+        color: '#878787',
     },
-    txt_right_info:{
+    txt_right_info: {
         color: '#fff',
-        fontSize:18,
+        fontSize: 18,
     },
-    right_info:{
+    right_info: {
         color: '#fff',
         width: '30%',
-        marginRight:-60,
-        
+        marginRight: -60,
+
     },
 
     //End User

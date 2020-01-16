@@ -12,7 +12,7 @@ export default class UserScreen extends Component {
         header: null,
     };
     render() {
-        const { navigate } = this.props.navigation
+        // const { navigate } = this.props.navigation
         return (
             <SafeAreaView style={styles.bg_primary}>
                 <View style={styles.bg_primary}>
@@ -24,7 +24,7 @@ export default class UserScreen extends Component {
                             <View style={styles.box_menu}>
 
                                 <TouchableOpacity style={styles.btn_user}
-                                    onPress={() => navigate('Detail')}>
+                                    onPress={() =>  this.props.navigation.navigate('Detail')}>
                                     <Text style={styles.txt_btn_user}>Thông tin cá nhân </Text>
                                     <Icon name="chevron-right" color='#fff' size={18} />
                                 </TouchableOpacity>

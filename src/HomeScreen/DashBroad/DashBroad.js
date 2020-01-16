@@ -12,11 +12,54 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 
 export default class DashBroadScreen extends Component {
+    
+    _renderHeader(item, expanded) {
+        return (
+            <View style={styles.btn_task}>
+                <Text style={styles.txt_title}>
+                    {item.title}
+                </Text>
+                {expanded
+                    ? <Icon style={{ fontSize: 20, color: '#fff' }} name="ios-arrow-dropup" />
+                    : <Icon style={{ fontSize: 20, color: '#fff' }} name="ios-arrow-dropdown" />}
+            </View>
+        );
+    }
+
+    _renderContent(item) {
+        return (
+            <View style={{ flex: 1 }}>
+                <Text style={styles.txt_Task}>
+                    Open
+                </Text>
+                <Text style={styles.txt_Task}>
+                    In Processing
+                </Text>
+                <Text style={styles.txt_Task}>
+                    On Hold
+                </Text>
+                <Text style={styles.txt_Task}>
+                    Close
+                </Text>
+            </View>
+        );
+    }
     render() {
+        const onAccordion = (
+            <Accordion
+                dataArray={dataArray}
+                animation={true}
+                expanded={true}
+                renderHeader={this._renderHeader}
+                renderContent={this._renderContent}
+            />
+        );
+   
+
         return (
             <View style={styles.bg_primary}>
                 <View style={styles.header_mobile}>
-                    <Image source={require('../../../logo/logoSmall.png')} style={styles.logo_title}></Image>
+                    <Image source={require('../../images/logoSmall.png')} style={styles.logo_title}></Image>
                 </View>
 
                 <View style={styles.content_body}>
